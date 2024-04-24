@@ -3,3 +3,4 @@ regex
 tqdm
 clip @ git+https://github.com/openai/CLIP@main
 beautifulsoup4
+python-dotenv
