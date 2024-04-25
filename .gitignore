@@ -1,2 +1,4 @@
 *.jpeg
-.env
+.env*
+thumbnails/
+dataset/thumbnails-jpegs/
