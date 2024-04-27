@@ -30,7 +30,6 @@ if __name__ == "__main__":
         # print(top_101_videos_url)
         response = requests.get(top_101_videos_url)
         data = response.json()
-        print(data)
         videos = data['items']
         
         sub_count = requests.get(sub_count_url).json()['items'][0]['statistics']['subscriberCount']

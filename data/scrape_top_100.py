@@ -27,7 +27,6 @@ for link in youtube_links:
         try:
             response = requests.get("https://www.googleapis.com/youtube/v3/search?part=snippet&type=channel&maxResults=1&q={0}&key={1}".format(href.split('/')[-1], api_key))
             print(response.json())
-            input()
             id = response.json()['items'][0]['id']['channelId']
             channel_ids.append(id)
         except:
